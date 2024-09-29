@@ -1,0 +1,114 @@
+.main-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.quiz-card {
+    width: 85%;
+    max-width: 800px;
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.question-section {
+    margin-bottom: 20px;
+}
+
+.question-count {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.question-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.answer-section-button {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    /* Adjust as needed */
+    color: #fff;
+    /* Adjust as needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer-section-button:hover {
+    background-color: #0056b3;
+    /* Adjust as needed */
+}
+
+.score-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.try-again {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #2cacc0;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #2cacc0;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+.try-again:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #2cacc0;
+    z-index: -1;
+}
+
+.try-again:hover,
+.try-again:focus {
+    color: white;
+}
+
+.try-again:hover:before,
+.try-again:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.try-again:active {
+    transform: scale(0.9);
+}
